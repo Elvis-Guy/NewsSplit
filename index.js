@@ -1,10 +1,12 @@
+// Create global variables
+
 let breakingImg = document.querySelector('#breakingImg')
 let breakingNews_title = document.querySelector('#breakingNews .title')
 let breakingNews_desc = document.querySelector('#breakingNews .description')
 let topNews = document.querySelector('.topNews')
 let sportsNews = document.querySelector('#sportsNews .newsBox')
 let businessNews = document.querySelector('#businessNews .newsBox')
-let techNews = document.querySelector('#techNews .newsBox')
+let entNews = document.querySelector('#entNews .newsBox')
 
 let header = document.querySelector('.header')
 let toggleMenu = document.querySelector('.bar')
@@ -78,7 +80,7 @@ const add_topNews = (data)=>{
     })
     topNews.innerHTML = html
 }
-fetchData('general',20).then(add_topNews)
+fetchData('general',30).then(add_topNews)
 
 const add_sportsNews = (data)=>{
     let html = ''
@@ -104,7 +106,7 @@ const add_sportsNews = (data)=>{
     })
     sportsNews.innerHTML = html
 }
-fetchData('sports',5).then(add_sportsNews)
+fetchData('sports',10).then(add_sportsNews)
 const add_businessNews = (data)=>{
     let html = ''
     let title = ''
@@ -129,8 +131,8 @@ const add_businessNews = (data)=>{
     })
     businessNews.innerHTML = html
 }
-fetchData('business',5).then(add_businessNews)
-const add_techNews = (data)=>{
+fetchData('business',10).then(add_businessNews)
+const add_entNews = (data)=>{
     let html = ''
     let title = ''
     data.forEach((element)=>{
@@ -152,6 +154,6 @@ const add_techNews = (data)=>{
                     </div>
                 </div>`
     })
-    techNews.innerHTML = html
+    entNews.innerHTML = html
 }
-fetchData('entertainment',5).then(add_techNews)
+fetchData('entertainment',10).then(add_entNews)
