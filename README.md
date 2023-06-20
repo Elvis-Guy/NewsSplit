@@ -18,3 +18,19 @@ The project utilizes HTML5, CSS3, JavaScript, and the Fetch API as its main tech
 * CSS3
 * JavaScript
 * Fetch API
+
+## Challenge Statement
+The goal is to create a platform accessible globally, providing news from various categories for users who prefer online news consumption.
+
+## Risks
+Technical Risks: Compatibility with older browsers, challenges with integrating third-party APIs.
+Non-Technical Risks: Potential negative user feedback. To mitigate, conduct user testing and make necessary improvements.
+
+## Infrastructure
+
+Branching and Merging: Use GitHub flow for branching and merging.
+Deployment Strategy: Deploy on GitHub Pages using GitHub Actions for automation.
+Data Population: Fetch API to populate the website with the latest news stories.
+Testing: Use automated testing tools like Jest and Cypress.
+
+
