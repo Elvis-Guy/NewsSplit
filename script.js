@@ -157,4 +157,4 @@ const add_entNews = (data)=>{
     })
     entNews.innerHTML = html
 }
-fetchData('technology',10).then(add_entNews)
+fetchData('entertainment',10).then(add_entNews)
